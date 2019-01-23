@@ -20,7 +20,7 @@ namespace Aline
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (usuario == txtUsuario.Text && senha ==txtSenha.Text)
+            if (usuario == txtUsuario.Text && senha == txtSenha.Text)
             {
                 MessageBox.Show("Login realizado com sucesso", "mensagem",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 this.Visible = false;

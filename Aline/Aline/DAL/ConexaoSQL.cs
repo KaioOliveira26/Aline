@@ -1,5 +1,5 @@
 ﻿using System;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,23 +12,31 @@ namespace Aline.DAL
 {
     class ConexaoSQL
     {
-        private static MySqlConnection conexao;
+        private static SqlConnection connection;
 
-        public void ConexaoMySQL()
+        public ConexaoSQL()
         {
             Inicializar();
         }
 
         private void Inicializar()
         {
-            if (conexao == null)
+            if (connection == null)
             {
-                conexao = new MySqlConnection();
+                connection = new SqlConnection();
                 // string de conexão com o MySQL obtida do arquivo App.config
-                conexao.ConnectionString = ConfigurationManager.ConnectionStrings["mysql"].ConnectionString;
+                connection.ConnectionString =@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Desenvolvimento\Kaio\Aline\Aline\Aline\Database\AlineEvents.mdf; Integrated Security = True; Connect Timeout = 30";
             }
         }
 
-       
+        public SqlDataReader Query(string query)
+        {
+            connection.Open();
+            SqlCommand command = new SqlCommand(query, connection);
+            SqlDataReader data = command.ExecuteReader();
+
+            connection.Close();
+            return data;
+        }
     }
 }

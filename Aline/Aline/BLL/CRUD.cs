@@ -1,5 +1,5 @@
 ﻿using Aline.DAL;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,25 +11,33 @@ namespace Aline.BLL
 {
     class CRUD
     {
-        private ConexaoSQL conexao;
-        private string Nome,CPF,Telefone;
-        private DateTime Nascimento;
+        private ConexaoSQL con;
 
-
-        public void Coleta (string Nome, string CPF, string Telefone, DateTime Nascimento)
+        public void NewUser (string name, string cpf, string phone, DateTime birthday)
         {
-            this.Nome = Nome;
-            this.CPF = CPF;
-            this.Telefone = Telefone;
-            this.Nascimento = Nascimento;
+            con = new ConexaoSQL();
+
+            string query = "INSERT INTO users (user_name, user_cpf, user_phone, birthday, creation_date) " +
+                    "VALUES ('" + name + "', '" + cpf + "', '" + phone + "', '" + birthday.ToString("yyy-MM-dd") + "', '" + DateTime.Now.ToString("yyy-MM-dd") + "');";
+
+            con.Query(query);
         }
+
+        public string getDate(DateTime date)
+        {
+            string new_date = date.Year.ToString() + "-" + date.Month.ToString("mm") + "-" + date.Day.ToString();
+            return new_date;
+        }
+
+        /*
         public void Create()
         {
+            SqlDataReader data = 
 
-           conexao = new ConexaoSQL();
-            String sql = "INSERT INTO PRODUTO (Nome, CPF, Preco,Nascimento) " +
-                    "VALUES (" + Nome + ", '" + CPF + "', " + Telefone + ", "+ Nascimento +")";
-         
-        }
+            while (data.Read())
+            {
+                
+            }
+        }*/
     }
 }

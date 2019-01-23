@@ -23,5 +23,10 @@ namespace Aline.Interface
             tlCliente.Show();
             this.Dispose();
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

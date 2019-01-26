@@ -12,15 +12,35 @@ namespace Aline.BLL
     class CRUD
     {
         private ConexaoSQL con;
+        
 
         public void NewUser (string name, string cpf, string phone, DateTime birthday)
         {
             con = new ConexaoSQL();
 
-            string query = "INSERT INTO users (user_name, user_cpf, user_phone, birthday, creation_date) " +
+            string query;
+            query = "INSERT INTO users (user_name, user_cpf, user_phone, birthday, creation_date) " +
                     "VALUES ('" + name + "', '" + cpf + "', '" + phone + "', '" + birthday.ToString("yyy-MM-dd") + "', '" + DateTime.Now.ToString("yyy-MM-dd") + "');";
 
             con.Query(query);
+        }
+
+        public SqlDataReader Query(string query)
+        {
+            con = new ConexaoSQL();
+
+            return con.Query(query);
+        }
+
+        public SqlDataReader GetUsers(int from, int to)
+        {
+            con = new ConexaoSQL();
+
+            string query;
+            query = "SELECT * FROM users limit(" + from + ", " + to + ")";
+            SqlDataReader data = con.Query(query);
+
+            return data;
         }
 
         public string getDate(DateTime date)

@@ -86,6 +86,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlineEventsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlineEventsDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="BLL\CRUD.cs" />
     <Compile Include="DAL\ConexaoSQL.cs" />
     <Compile Include="DataSet1.Designer.cs">
@@ -164,6 +169,17 @@
     <EmbeddedResource Include="UI\Tarefa.resx">
       <DependentUpon>Tarefa.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="AlineEventsDataSet.xsc">
+      <DependentUpon>AlineEventsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AlineEventsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlineEventsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlineEventsDataSet.xss">
+      <DependentUpon>AlineEventsDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Aline_TemporaryKey.pfx" />
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>

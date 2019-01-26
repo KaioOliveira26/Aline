@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aline.exe" size="29136">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aline.exe" size="65488">
       <assemblyIdentity name="Aline" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>jl0jO4Ldws/K6fKv/td0FA3Q8QW/UzSI52ERadouBEc=</dsig:DigestValue>
+        <dsig:DigestValue>fBQaNglBkK4Epw4B/xC4oDT3ImK0RCGajYuF712eTks=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -77,13 +77,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Aline.exe.config" size="362">
+  <file name="Aline.exe.config" size="686">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bvG3OLV2ihoxa41HiDMoQRCf+SF3KHJERiY2y9OkJAY=</dsig:DigestValue>
+      <dsig:DigestValue>GG6poND0u95VPFAxIxO1TdVV0Bq1SKqPbAJOJlv6etE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database\AlineEvents.mdf" size="8388608" writeableType="applicationData">
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Nf+uRyT0aBqG66cixYMHfynnz1qpGnzLPnjWpqiZXpc=</dsig:DigestValue>
+      <dsig:DigestValue>paFsmgkOkXEKf+Htrhi/OgMW4XNLZ6Z5HxTyL728E3A=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database\AlineEvents_log.ldf" size="8388608" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>vn45OxvLd3I3XQ4DdVqQwAjWmJUigXKSzfN3nibG9XI=</dsig:DigestValue>
+      <dsig:DigestValue>pQbgMsgVr8030FfhMO7dHjmZ9/8KDPqTngk9VyIpclc=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

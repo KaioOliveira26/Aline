@@ -25,7 +25,7 @@ namespace Aline.DAL
             {
                 connection = new SqlConnection();
                 // string de conexão com o MySQL obtida do arquivo App.config
-                connection.ConnectionString =@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Desenvolvimento\Kaio\Aline\Aline\Aline\Database\AlineEvents.mdf; Integrated Security = True; Connect Timeout = 30";
+                connection.ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Desenvolvimento\Kaio\Aline\Aline\Aline\Aline\Database\AlineEvents.mdf;Integrated Security=True";
             }
         }
 
@@ -34,7 +34,6 @@ namespace Aline.DAL
             connection.Open();
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataReader data = command.ExecuteReader();
-
             connection.Close();
             return data;
         }

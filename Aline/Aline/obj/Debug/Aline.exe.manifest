@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aline.exe" size="65488">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Aline.exe" size="70096">
       <assemblyIdentity name="Aline" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>fBQaNglBkK4Epw4B/xC4oDT3ImK0RCGajYuF712eTks=</dsig:DigestValue>
+        <dsig:DigestValue>zCo6vcIJFaKrSqyEf5sx+e5JYchQyKQPkrN4wPP1iwQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -92,7 +92,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>paFsmgkOkXEKf+Htrhi/OgMW4XNLZ6Z5HxTyL728E3A=</dsig:DigestValue>
+      <dsig:DigestValue>ivDwNegZKYqcHgv/P9rtRRznhk+zYFp2EejKp5iTOzI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Database\AlineEvents_log.ldf" size="8388608" writeableType="applicationData">
@@ -101,7 +101,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>pQbgMsgVr8030FfhMO7dHjmZ9/8KDPqTngk9VyIpclc=</dsig:DigestValue>
+      <dsig:DigestValue>EsnbpSqXS028UHghFL+dG/cZ4M44s1xidxHVE4sHOAs=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>
